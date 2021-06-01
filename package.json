@@ -1,0 +1,16 @@
+{
+  "name": "photo-album",
+  "version": "1.0.0",
+  "description": "photo album node and react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-client": "cd album-ui && npm start",
+    "start-server": "cd album && npm start",
+    "start-album": "concurrently \"npm run start-client\" \"npm run start-server\""
+  },
+  "author": "Suraj Pasayat",
+  "dependencies": {
+    "concurrently": "^6.2.0"
+  }
+}
